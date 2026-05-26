@@ -1,6 +1,24 @@
 // Created by Cryonic Industries, https://github.com/Cryonic-Industries. Big thanks to the YouTube channel Tasting History for teaching me so much about Greco-Roman cuisine and history!
 // I hope you have fun~! ^.^
 
+// Garum Products
+
+addIngredient("garum", {
+    type: "liquid",
+    group: "meat",
+    shape: "liquid",
+    placedShape: "droplets_some",
+    landedShape: "liquid_splat",
+    stackShape: "liquid_splat",
+    behavior: 1,
+    adj: "garum covered",
+    keywords:"liquamen,fish sauce",
+    color: "#6f4e37",
+    reactions: {
+        water: { set1: "hydrogarum" }
+    }
+});
+
 addIngredient("hydrogarum", {
     type: "garum",
     group: "meat",
